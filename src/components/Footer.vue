@@ -138,10 +138,10 @@
 			<div id="footBox">
 				<img src="../assets/FootImg/CFC.png" alt="#" id="cfcLogo" />
 				<div id="icons">
-					<a href="http://qq.com"><img src="../assets/FootImg/qq.png" alt="" class="iconImg" /> </a>
-					<a href="http://qq.com"><img src="../assets/FootImg/github.png" alt="" class="iconImg" /> </a>
-					<a href="http://qq.com"><img src="../assets/FootImg/wechat.png" alt="" class="iconImg" /> </a>
-					<a href="http://qq.com"><img src="../assets/FootImg/email.png" alt="" class="iconImg" /> </a>
+					<div @click="onQQClick"><img src="../assets/FootImg/qq.png" alt="" class="iconImg" /> </div>
+					<a href="https://github.com/CrazyForCode"><img src="../assets/FootImg/github.png" alt="" class="iconImg" /> </a>
+					<a href="https://mp.weixin.qq.com/s?__biz=Mzg3NzUxNjE5OQ==&mid=2247483698&idx=1&sn=9e63c934c697a21665b4c8f7e736b663&chksm=cf2085faf8570cec13b773d84bcd80c8e6d1574fe7c5b343982ad0bd9381806b896a017dd634&mpshare=1&scene=23&srcid=1124z7zoWyC7pMy1QLQK5pzr&sharer_sharetime=1637759221463&sharer_shareid=502450450a38379b9390fed83b301578%23rd"><img src="../assets/FootImg/wechat.png" alt="" class="iconImg" /> </a>
+					<!-- <a href="#"><img src="../assets/FootImg/email.png" alt="" class="iconImg" /> </a> -->
 				</div>
 				<p id="footText" class="text">©2013-2021 Not Really</p>
 			</div>
@@ -151,7 +151,12 @@
 
 <script>
 export default {
-	name: 'Footer'
+	name: 'Footer',
+	methods:{
+		onQQClick() {
+			alert('加入2022 QQ招新群：981428044 了解更多')
+		}
+	}
 }
 </script>
 
