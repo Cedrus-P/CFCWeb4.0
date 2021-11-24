@@ -225,9 +225,9 @@ export default {
 	// height: fit-content;
 	height: auto;
 	max-width: 800px;
-	line-height: 1.8em;
+	line-height: 1.5em;
 	width: 100%;
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 	animation: fadeInUp;
 	animation-duration: 2s;
 }
