@@ -103,11 +103,11 @@ export default {
 	align-items: center;
 }
 .filter {
-	height: 50%;
-	width: 60%;
+	height: 40%;
+	width: 90%;
 	max-width: 900px;
-	min-width: 700px;
-	min-height: 400px;
+	min-width: 300px;
+	min-height: 500px;
 	position: absolute;
 	z-index: 100;
 	border: solid 1px rgba(0, 0, 0, 0.2);
@@ -181,7 +181,8 @@ td {
 	padding: 10px;
 }
 input {
-	width: auto;
+	width: 70%;
+	min-width: 30px;
 	outline-style: none;
 	margin: 10px;
 	border-radius: 2px;

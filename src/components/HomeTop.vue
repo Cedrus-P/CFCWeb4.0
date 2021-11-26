@@ -5,7 +5,7 @@
 				<!-- <BgSnow /> -->
 				<div class="content-left">
 					<div class="content-top">
-						<div id="cfc-top-text" class="text cfc-text text-changed">
+						<div id="cfc-top-text" class="text cfc-text text-changed big-text">
 							CFC Studio
 						</div>
 						<div class="text cfc-text typing">Crazy For Code</div>
@@ -23,7 +23,7 @@
 									CFC团队成立于2013年1月，是重庆理工大学第一支完全由学生自主创立的计算机实验室。团队最初由三位热爱Web技术，渴望交流的学长组建，经过多年的发展，团队不断壮大，成员们的学习方向也不再局限于Web。<br />CFC已经成为重理工最大的的极客聚居地之一，并创造了多个校史第一。CFC一直秉承CrazyForCode的理念，为校内热爱技术、乐于学习的学子提供一个舒适的Coding环境和优秀的交流平台。
 								</p>
 								<div class="arrow-down " @click="onArrowClick">
-									<img src="../assets/FootImg/next.png" alt="" id="nextImg">
+									<img src="../assets/FootImg/next.png" alt="" id="nextImg" />
 								</div>
 							</div>
 						</transition>
@@ -37,7 +37,7 @@
 						</transition>
 					</div>
 				</div>
-				<div class="content-right"></div>
+				<!-- <div class="content-right"></div> -->
 			</div>
 		</div>
 	</div>
@@ -114,11 +114,7 @@ export default {
 }
 .hometop {
 	height: 100vh;
-	width: 100vw;
-	// background-image: linear-gradient(
-	// 	rgba(0, 20, 174, 0.735),
-	// 	rgba(0, 0, 0, 0.9)
-	// );
+	width: 100%;
 	background: rgb(255, 255, 255);
 	transition: 1s ease-in-out;
 }
@@ -131,40 +127,35 @@ export default {
 	// transition: .5s ease-in-out;
 }
 #barrier {
-	height: 100vh;
-	width: 100vw;
 	display: flex;
 	flex-direction: row;
-	// background: linear-gradient(
-	// 	0.5turn,
-	// 	rgb(21, 23, 39),
-	// 	rgba(21, 23, 39, 0.8) 60%,
-	// 	rgba(255, 255, 255, 0)
-	// );
 }
 .content-left {
 	height: 100vh;
-	width: 80%;
+	// width: 80%;
 	// display: flex;
 }
 .content-top {
 	height: auto;
 	width: fit-content;
-	padding: 8% 0 0 8%;
+	padding: 30% 0 0 8%;
 	transition: 1s ease-in-out;
 }
 .smaller {
-	padding-top: 6%;
+	padding-top: 15%;
 }
 .cfc-text {
-	width: 7.5em;
-	font-size: 72px;
+	width: 6rem;
+	font-size: 0.8rem;
 	font-weight: 500;
 	transition: 1s ease-in-out;
 }
+.big-text{
+	width: 9rem;
+}
 .typing {
 	height: 1.25em;
-	border-right: 25px solid;
+	border-right: 5px solid;
 	animation: typing 3s steps(15, end), blink-caret 1s step-end infinite;
 	word-break: break-all;
 	overflow: hidden;
@@ -174,7 +165,7 @@ export default {
 		width: 0;
 	}
 	to {
-		width: 7.5em;
+		width: 5.5em;
 	}
 }
 @keyframes blink-caret {
@@ -187,15 +178,12 @@ export default {
 	}
 }
 .text-changed {
-	font-size: 8rem;
+	font-size: 1.6rem;
 }
 // 下半部分
 .content-down {
 	width: auto;
 	height: auto;
-	// display: flex;
-	// align-items: center;
-	margin-left: 12%;
 }
 
 .content1 {
@@ -224,10 +212,10 @@ export default {
 .ariticle {
 	// height: fit-content;
 	height: auto;
-	max-width: 800px;
-	line-height: 1.5em;
-	width: 100%;
-	font-size: 1.5rem;
+	max-width: 1000px;
+	line-height: 1.4em;
+	width: 80%;
+	font-size: 0.5rem;
 	animation: fadeInUp;
 	animation-duration: 2s;
 }
@@ -260,7 +248,8 @@ export default {
 	}
 }
 .click-text {
-	font-size: 24px;
+	padding-left: 10%;
+	font-size: 0.5rem;
 	font-weight: 600;
 }
 .arrow-down {
@@ -273,13 +262,14 @@ export default {
 		animation-iteration-count: infinite;
 	}
 }
-#nextImg{
+#nextImg {
 	width: 30px;
 }
 .content3 {
 	width: fit-content;
 	margin-top: 3%;
-
+	display: flex;
+	justify-content: center;
 	animation: fadeInUp;
 	animation-duration: 2s;
 }

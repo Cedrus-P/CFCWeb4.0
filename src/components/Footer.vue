@@ -1,6 +1,6 @@
 <template>
 	<div id="footer">
-		<div class="bubbles">
+		<!-- <div class="bubbles">
 			<div
 				class="bubble"
 				style="--size:2.4559311599733995rem; --distance:30.227600719293314rem; --position:62.62259127479484%; --time:2.721953860748526s; --delay:-3.615248376660494s;--colors:#007fce"
@@ -129,7 +129,7 @@
 				class="bubble"
 				style="--size:7.395052242958421rem; --distance:32.77923484884705rem; --position:84.64841575823483%; --time:2.925765243616892s; --delay:-4.524905453842674s;--colors:#ff0e58"
 			></div>
-		</div>
+		</div> -->
 		<div class="content">
 			<!-- <div>
 				<div><b>E-mail:</b><a href="#">crazyforcode@qq.com</a></div>
@@ -167,13 +167,13 @@ export default {
 	display: grid;
 	position: relative;
 	grid-area: footer;
-	min-height: 12rem;
+	min-height: 300px;
 	.bubbles {
 		position: absolute;
 		top: 0;
 		left: 0;
 		right: 0;
-		height: 1rem;
+		height: 150px;
 		background: var(--footer-background);
 		// filter:url("#blob");
 		.bubble {
@@ -213,8 +213,8 @@ export default {
 @keyframes bubble-size {
 	0%,
 	55% {
-		width: var(--size, 3rem);
-		height: var(--size, 3rem);
+		width: var(--size, 1rem);
+		height: var(--size, 1rem);
 	}
 	100% {
 		width: 6rem;

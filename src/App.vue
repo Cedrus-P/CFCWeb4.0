@@ -36,12 +36,8 @@
 html {
 	font-size: 16px;
 }
-body {
-	// height: 100vh;
-	width: 100vw;
-}
 #header {
-	width: 100vw;
+	// width: 100%;
 	height: 50px;
 	position: fixed;
 	// display: flex;

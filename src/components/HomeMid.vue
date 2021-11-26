@@ -120,14 +120,14 @@ export default {
 <style scoped lang="scss">
 .homemid {
 	height: 100vh;
-	width: 100vh;
+	width: 100%;
 	background-color: rgb(255, 255, 255);
 	// background: linear-gradient(0.9turn, rgb(21,23,39) 50%, white 50%);
 	// background-color: #282828;
 }
 .barrier {
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	background-image: url('../assets/MidImg/04.png');
 	background-size: 120%;
 	background-attachment: fixed;
@@ -146,9 +146,9 @@ export default {
 	background-color: rgba(255, 255, 255, 0.5);
 	position: relative;
 	height: 100%;
-	width: 60%;
+	width: 90%;
 	max-width: 1000px;
-	min-width: 500px;
+	min-width: 350px;
 	border-radius: 15px;
 	backdrop-filter: blur(20px);
 	box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 5px 5px,
@@ -160,27 +160,13 @@ export default {
 	// animation-iteration-count: infinite;
 }
 
-// .human-contents::before {
-// 	content: '';
-
-// 	bottom: calc(-3 * 3rem);
-// 	left: 50px;
-// 	position: absolute;
-// 	height: calc(3 * 3rem);
-// 	width: 2rem;
-// 	background-color: transparent;
-// 	border-top-left-radius: 3rem;
-// 	box-shadow: #ffffff 0px calc(-2 * 2rem) 0px 0px;
-// }
 .innertext {
 	width: 90%;
 	height: auto;
 	display: flex;
-	// flex-direction: row;
-	// justify-content: center;
 }
 .intro-text {
-	font-size: 24px;
+	font-size: 0.4rem;
 	height: fit-content;
 }
 
@@ -192,9 +178,9 @@ export default {
 	justify-content: center;
 }
 .humanImg {
-	width: 10rem;
+	width: 12%;
 	height: auto;
-	min-width: 150px;
+	min-width: 90px;
 	margin: 0 5% 0 5%;
 	border-radius: 50%;
 }

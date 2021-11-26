@@ -1,5 +1,5 @@
 <template>
-	<div class="home">
+	<div id="home">
 		<HomeTop />
 		<HomeMid />
 		<HomeBottom />
@@ -24,8 +24,8 @@ export default {
 </script>
 
 <style>
-.home {
-	height: 100vh;
-	width: 100vw;
+#home {
+	height: 100%;
+	width: 100%;
 }
 </style>
