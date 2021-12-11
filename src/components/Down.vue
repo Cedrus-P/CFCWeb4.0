@@ -52,7 +52,7 @@
 					</a>
 					<!-- <a href="#"><img src="../assets/FootImg/email.png" alt="" class="iconImg" /> </a> -->
 				</div>
-				<p id="footText" class="text">©2013-2021 Not Really</p>
+				<p id="footText" class="text">©2013-2021 Copy Right CFC</p>
 			</div>
     </div>
 </template>
