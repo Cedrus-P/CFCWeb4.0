@@ -1,4 +1,4 @@
-# cfc
+# cfc-demo
 
 ## Project setup
 ```
