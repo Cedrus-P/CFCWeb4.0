@@ -73,7 +73,6 @@ export default {
 				let y = e.clientY - rect.top
 				bg.style.backgroundPositionX = -x / 10 - 300 + 'px'
 				bg.style.backgroundPositionY = y / 10 - 250 + 'px'
-				// console.log('ok');
 			}, 24)
 		)
 	},
@@ -84,7 +83,6 @@ export default {
 			this.seen3 = false
 			let box = document.querySelector('.imgBlue')
 			box.classList.add('imgClicked')
-			console.log(box.classList)
 			setTimeout(() => {
 				box.classList.remove('imgClicked')
 			}, 10000)

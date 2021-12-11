@@ -43,7 +43,7 @@
 											class="input"
 										/>
 									</td>
-									<td>E-mail</td>
+									<td>Email</td>
 									<td id="joinEmail">
 										<input type="text" id="email" name="email" class="input" />
 									</td>
@@ -108,7 +108,7 @@ export default {
 	width: 90%;
 	max-width: 900px;
 	min-width: 300px;
-	min-height: 500px;
+	min-height: 450px;
 	position: absolute;
 	z-index: 100;
 	border: solid 1px rgba(0, 0, 0, 0.2);
@@ -139,7 +139,6 @@ export default {
 	position: relative;
 	margin: auto;
 	height: 100%;
-	// margin-top: 40px;
 	font-size: 18px;
 	display: flex;
 	flex-direction: column;
@@ -179,7 +178,7 @@ export default {
 td {
 	font-weight: 600;
 	color: rgb(0, 0, 0);
-	padding: 10px;
+	padding: 5px 3px;
 }
 input {
 	width: 70%;
@@ -224,5 +223,21 @@ input:focus {
 }
 #joinCommitBtu:hover {
 	box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px 2px;
+}
+
+// 适配
+@media screen and (max-width: 600px) {
+	#join
+	td{
+		padding: 0;
+	}
+	input{
+		margin: 0;
+	}
+	#joinContent {
+		font-size: 14px;
+	}
+
+
 }
 </style>

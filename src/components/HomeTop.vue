@@ -1,5 +1,5 @@
 <template>
-	<div class="hometop">
+	<div id="hometop">
 		<div class="test-bg">
 			<div id="barrier">
 				<div class="content-left">
@@ -12,7 +12,7 @@
 					<div class="content-down">
 						<transition name="fade">
 							<div class="content1" v-if="show1">
-								<p class="click-text text">Click Me! ></p>
+								<p class="click-text text">Click Here! ></p>
 								<div class="control-point" @click="onPointClick"></div>
 							</div>
 						</transition>
@@ -107,7 +107,7 @@ export default {
 	animation: fadeInLeft;
 	animation-duration: 3s;
 }
-.hometop {
+#hometop {
 	height: 100vh;
 	width: 100%;
 	background: rgb(255, 255, 255);
@@ -130,7 +130,7 @@ export default {
 .content-top {
 	height: auto;
 	width: fit-content;
-	padding: 30% 0 0 8%;
+	padding: 20% 0 0 10%;
 	transition: 1s ease-in-out;
 }
 .smaller {
@@ -138,13 +138,13 @@ export default {
 	transition: 1s ease-in-out;
 }
 .cfc-text {
-	width: 7.5rem;
-	font-size: 1rem;
+	width: 11rem;
+	font-size: 1.5rem;
 	font-weight: 500;
 	transition: 1s ease-in-out;
 }
 .big-text {
-	width: 12rem;
+	width: 14rem;
 }
 .typing {
 	height: 1.25em;
@@ -158,7 +158,7 @@ export default {
 		width: 0;
 	}
 	to {
-		width: 5.5em;
+		width: 7.5rem;
 	}
 }
 @keyframes blink-caret {
@@ -171,7 +171,7 @@ export default {
 	}
 }
 .text-changed {
-	font-size: 2rem;
+	font-size: 122px;
 }
 // 下半部分
 .content-down {
@@ -241,7 +241,7 @@ export default {
 	}
 }
 .click-text {
-	padding-left: 10%;
+	padding-left: 25%;
 	font-size: 0.5rem;
 	font-weight: 600;
 }
@@ -269,5 +269,25 @@ export default {
 .content-right {
 	color: white;
 	font-size: 36px;
+}
+
+// 适配
+@media screen and (max-width: 600px) {
+	.big-text {
+		width: 8rem;
+	}
+	.text-changed {
+		font-size: 1.5rem !important;
+	}
+	.content-top {
+		padding: 70% 0 0 10%;
+	}
+	.smaller {
+		padding-top: 30%;
+	}
+	.cfc-text {
+		width: 8rem;
+		font-size: 1rem;
+	}
 }
 </style>
