@@ -61,17 +61,19 @@
 				</div>
 			</div>
 		</div>
-		<!-- <img src="../assets/MidImg/typing-cat.gif" alt="" class="typing-cat" /> -->
-		<Footer />
+		<!-- <Footer /> -->
+		<Down />
 	</div>
 </template>
 
 <script>
 import Footer from './Footer.vue'
+import Down from './Down.vue'
 export default {
 	name: 'HomeBottom',
 	components: {
-		Footer
+		Footer,
+		Down
 	},
 	props: {
 		msg: String
@@ -89,7 +91,6 @@ export default {
 .homebottom {
 	height: 100%;
 	width: 100%;
-	background-color: rgb(255, 255, 255);
 	transition: 1s all;
 	position: absolute;
 }

@@ -1,7 +1,4 @@
 <template>
-	<!--Hey! This is the original version
-of Simple CSS Waves-->
-
 	<div id="down">
 		<!--Content before waves-->
 		<div class="inner-header flex"></div>
@@ -58,7 +55,6 @@ of Simple CSS Waves-->
 				<p id="footText" class="text">©2013-2021 Not Really</p>
 			</div>
     </div>
-	</div>
 </template>
 
 <script>
@@ -83,7 +79,6 @@ export default {
 }
 
 .inner-header {
-	height: 50vh;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -108,7 +103,7 @@ export default {
 
 .content {
 	position: relative;
-	height: 20vh;
+	height: 25vh;
   width: auto;
 	text-align: center;
 	background-color: #4acac3;

@@ -2,13 +2,12 @@
 	<div class="hometop">
 		<div class="test-bg">
 			<div id="barrier">
-				<!-- <BgSnow /> -->
 				<div class="content-left">
 					<div class="content-top">
-						<div id="cfc-top-text" class="text cfc-text text-changed big-text">
+						<h1 id="cfc-top-text" class="text cfc-text text-changed big-text">
 							CFC Studio
-						</div>
-						<div class="text cfc-text typing">Crazy For Code</div>
+						</h1>
+						<h2 class="text cfc-text typing">Crazy For Code</h2>
 					</div>
 					<div class="content-down">
 						<transition name="fade">
@@ -45,13 +44,10 @@
 
 <script>
 import utils from '../assets/utils'
-import BgSnow from '@/components/BgSnow.vue'
 
 export default {
 	name: 'HomeTop',
-	components: {
-		BgSnow
-	},
+	components: {},
 	props: {
 		msg: String
 	},
@@ -73,7 +69,6 @@ export default {
 				let y = e.clientY - rect.top
 				bg.style.backgroundPositionX = x / 5 - 300 + 'px'
 				bg.style.backgroundPositionY = y / 5 - 250 + 'px'
-				// console.log('ok');
 			}, 24)
 		)
 	},
@@ -124,7 +119,6 @@ export default {
 	background-position: center;
 	background-repeat: repeat;
 	background-attachment: fixed;
-	// transition: .5s ease-in-out;
 }
 #barrier {
 	display: flex;
@@ -132,8 +126,6 @@ export default {
 }
 .content-left {
 	height: 100vh;
-	// width: 80%;
-	// display: flex;
 }
 .content-top {
 	height: auto;
@@ -142,16 +134,17 @@ export default {
 	transition: 1s ease-in-out;
 }
 .smaller {
-	padding-top: 15%;
+	padding-top: 10%;
+	transition: 1s ease-in-out;
 }
 .cfc-text {
-	width: 6rem;
-	font-size: 0.8rem;
+	width: 7.5rem;
+	font-size: 1rem;
 	font-weight: 500;
 	transition: 1s ease-in-out;
 }
-.big-text{
-	width: 9rem;
+.big-text {
+	width: 12rem;
 }
 .typing {
 	height: 1.25em;
@@ -178,7 +171,7 @@ export default {
 	}
 }
 .text-changed {
-	font-size: 1.6rem;
+	font-size: 2rem;
 }
 // 下半部分
 .content-down {

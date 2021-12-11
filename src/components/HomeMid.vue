@@ -1,6 +1,5 @@
 <template>
 	<div class="homemid">
-		<!-- <bg-snow></bg-snow> -->
 		<div class="barrier">
 			<div class="human-top">
 				<div class="human-contents">
@@ -43,7 +42,6 @@
 
 <script>
 import utils from '../assets/utils'
-import BgSnow from '@/components/BgSnow.vue'
 
 export default {
 	name: 'HomeMid',
@@ -64,7 +62,6 @@ export default {
 		}
 	},
 	components: {
-		BgSnow
 	},
 	mounted() {
 		let bg = document.querySelector('.barrier')
