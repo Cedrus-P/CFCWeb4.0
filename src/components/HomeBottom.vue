@@ -1,41 +1,41 @@
 <template>
-	<div class="homebottom" id="joinus">
-		<div class="barrier">
+	<div id="homebottom">
+		<div class="homebottom-barrier">
 			<div class="filter">
 				<div id="list">
-					<div id="joinBox">
-						<div id="joinText">
+					<div id="join-box">
+						<div id="join-text">
 							<div id="j">J</div>
 							<div id="o">OIN US</div>
 						</div>
-						<div id="joinLine"></div>
+						<div id="join-line"></div>
 					</div>
 					<form action="" id="jointable">
-						<table id="joinContent" cellpadding="20px">
+						<table id="join-content" cellpadding="20px">
 							<tbody>
 								<tr>
 									<td>Name</td>
-									<td id="joinName">
+									<td id="join-name">
 										<input type="text" id="name" name="name" class="input" />
 									</td>
 									<td>Tel</td>
-									<td id="joinTel">
+									<td id="join-tel">
 										<input type="text" id="tel" name="tel" class="input" />
 									</td>
 								</tr>
 								<tr>
 									<td>Major</td>
-									<td id="joinMajor">
+									<td id="join-major">
 										<input type="text" id="major" name="major" class="input" />
 									</td>
 									<td>Grade</td>
-									<td id="joinGrade">
+									<td id="join-grade">
 										<input type="text" id="grade" name="grade" class="input" />
 									</td>
 								</tr>
 								<tr>
 									<td>Interest</td>
-									<td id="joinInterest">
+									<td id="join-interest">
 										<input
 											type="text"
 											id="interest"
@@ -44,18 +44,18 @@
 										/>
 									</td>
 									<td>Email</td>
-									<td id="joinEmail">
+									<td id="join-email">
 										<input type="text" id="email" name="email" class="input" />
 									</td>
 								</tr>
 							</tbody>
 						</table>
 					</form>
-					<button id="joinCommitBtu" @click="onCommitClick">
-						<div id="joinCommitText">COMMIT</div>
+					<button id="join-commit-btu" @click="onCommitClick">
+						<div id="join-commit-text">COMMIT</div>
 						<img
 							src="https://img.icons8.com/ios/50/000000/paper-plane.png"
-							class="plane"
+							id="plane"
 						/>
 					</button>
 				</div>
@@ -86,16 +86,15 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.homebottom {
+#homebottom {
 	height: 100%;
 	width: 100%;
 	transition: 1s all;
 	position: absolute;
 }
 
-.barrier {
+.homebottom-barrier {
 	height: 90%;
 	overflow: hidden;
 	display: flex;
@@ -135,7 +134,7 @@ export default {
 	justify-content: space-around;
 	align-items: center;
 }
-#joinContent {
+#join-content {
 	position: relative;
 	margin: auto;
 	height: 100%;
@@ -145,13 +144,13 @@ export default {
 	justify-content: space-around;
 	align-items: center;
 }
-#joinBox {
+#join-box {
 	width: 250px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-#joinText {
+#join-text {
 	height: 48px;
 	font-size: 48px;
 	font-weight: 600;
@@ -167,7 +166,7 @@ export default {
 #o {
 	padding-top: 3px;
 }
-#joinLine {
+#join-line {
 	height: 6px;
 	width: 146px;
 	background-color: rgb(0, 0, 0);
@@ -200,10 +199,9 @@ input:focus {
 	box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075),
 		0 0 5px rgba(255, 255, 255, 0.3);
 }
-#joinCommitBtu {
+#join-commit-btu {
 	width: 150px;
 	height: 40px;
-	// border-radius: 20px;
 	border: solid 1px rgb(32, 32, 32);
 	font-size: 24px;
 	font-weight: 600;
@@ -217,27 +215,24 @@ input:focus {
 	justify-content: space-evenly;
 	align-items: center;
 }
-.plane {
+#plane {
 	height: 25px;
 	width: 25px;
 }
-#joinCommitBtu:hover {
+#join-commit-btu:hover {
 	box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px 2px;
 }
 
 // 适配
 @media screen and (max-width: 600px) {
-	#join
-	td{
+	#join td {
 		padding: 0;
 	}
-	input{
+	input {
 		margin: 0;
 	}
-	#joinContent {
+	#join-content {
 		font-size: 14px;
 	}
-
-
 }
 </style>

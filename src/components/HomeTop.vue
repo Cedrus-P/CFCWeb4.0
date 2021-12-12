@@ -1,18 +1,18 @@
 <template>
 	<div id="hometop">
-		<div class="test-bg">
-			<div id="barrier">
-				<div class="content-left">
-					<div class="content-top">
-						<h1 id="cfc-top-text" class="text cfc-text text-changed big-text">
+		<div class="hometop-bg">
+			<div id="hometop-barrier">
+				<div class="hometop-content">
+					<div class="hometop-content-up">
+						<h1 id="cfc-up-text" class="text cfc-text text-changed big-text">
 							CFC Studio
 						</h1>
 						<h2 class="text cfc-text typing">Crazy For Code</h2>
 					</div>
-					<div class="content-down">
+					<div class="hometop-content-down">
 						<transition name="fade">
 							<div class="content1" v-if="show1">
-								<p class="click-text text">Click Here! ></p>
+								<p class="click-text text">Click Here!></p>
 								<div class="control-point" @click="onPointClick"></div>
 							</div>
 						</transition>
@@ -60,7 +60,7 @@ export default {
 	},
 	mounted() {
 		document.addEventListener('scroll', this.onScroll, true)
-		let bg = document.querySelector('.test-bg')
+		let bg = document.querySelector('.hometop-bg')
 		const rect = bg.getBoundingClientRect()
 		bg.addEventListener(
 			'mousemove',
@@ -75,17 +75,17 @@ export default {
 	methods: {
 		onScroll() {
 			utils.debounce(() => {
-				let box1 = document.querySelector('.content-top')
+				let box1 = document.querySelector('.hometop-content-up')
 				box1.classList.add('smaller')
-				document.getElementById('cfc-top-text').classList.remove('text-changed')
+				document.getElementById('cfc-up-text').classList.remove('text-changed')
 				this.show1 = false
 				if (!this.show3) this.show2 = true
 			}, 300)
 		},
 		onPointClick() {
-			let box1 = document.querySelector('.content-top')
+			let box1 = document.querySelector('.hometop-content-up')
 			box1.classList.add('smaller')
-			document.getElementById('cfc-top-text').classList.remove('text-changed')
+			document.getElementById('cfc-up-text').classList.remove('text-changed')
 			// 文案切换
 			this.show1 = false
 			this.show2 = true
@@ -113,32 +113,32 @@ export default {
 	background: rgb(255, 255, 255);
 	transition: 1s ease-in-out;
 }
-.test-bg {
+.hometop-bg {
 	background-image: url('../assets/HomeImg/03.png');
 	background-size: 130% auto;
 	background-position: center;
 	background-repeat: repeat;
 	background-attachment: fixed;
 }
-#barrier {
+#hometop-barrier {
 	display: flex;
 	flex-direction: row;
 }
-.content-left {
+.hometop-content {
 	height: 100vh;
 }
-.content-top {
+.hometop-content-up {
 	height: auto;
 	width: fit-content;
 	padding: 20% 0 0 10%;
 	transition: 1s ease-in-out;
 }
 .smaller {
-	padding-top: 10%;
+	padding-top: 15%;
 	transition: 1s ease-in-out;
 }
 .cfc-text {
-	width: 11rem;
+	width: 11.5rem;
 	font-size: 1.5rem;
 	font-weight: 500;
 	transition: 1s ease-in-out;
@@ -174,7 +174,7 @@ export default {
 	font-size: 122px;
 }
 // 下半部分
-.content-down {
+.hometop-content-down {
 	width: auto;
 	height: auto;
 }
@@ -203,7 +203,6 @@ export default {
 	align-items: center;
 }
 .ariticle {
-	// height: fit-content;
 	height: auto;
 	max-width: 1000px;
 	line-height: 1.4em;
@@ -272,14 +271,17 @@ export default {
 }
 
 // 适配
-@media screen and (max-width: 600px) {
-	.big-text {
-		width: 8rem;
+@media screen and (max-height: 800px) {
+	.smaller{
+		padding-top: 5%;
 	}
+}
+@media screen and (max-width: 768px) {
 	.text-changed {
-		font-size: 1.5rem !important;
+		font-size: 1.4rem !important;
+		font-weight: 700;
 	}
-	.content-top {
+	.hometop-content-up {
 		padding: 70% 0 0 10%;
 	}
 	.smaller {

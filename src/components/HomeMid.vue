@@ -1,38 +1,49 @@
 <template>
-	<div class="homemid">
-		<div class="barrier">
-			<div class="human-top">
-				<div class="human-contents">
+	<div id="homemid">
+		<div class="homemid-barrier">
+			<div class="homemid-up">
+				<div class="homemid-up-contents">
 					<div class="innertext">
 						<div class="text intro-text" v-if="seen1">
-							<p>自由没有思想自由，就没有科学，没有真理。—— 勒南（法国作家、历史学家）<br/>在这里，没有老师，没有教条，你学什么，怎么学由你自己定夺。不用害怕前进路上的黑暗，心中的火焰会照亮属于你的那条路。</p>
+							<p>
+								<b> 这里有最浓厚的技术氛围：</b
+								><br /><br />开放的空间，自由的环境，拿起小黑板就是一场 idea
+								的碰撞，打开投影仪就是一场激情的展示。每两周一次的 LightON!
+								技术交流活动，团队成员畅所欲言，交流自己的所学所想，你可以在此刻大放异彩，分享最炫酷的黑科技；或是交流最核心的技术细节，与志同道合的小伙伴一起攻下难题。
+							</p>
 						</div>
 						<div class="text intro-text" v-if="seen2">
-							<p>热爱实践热爱真理，是发现真理最有利的条件。—— 爱尔维修（法国哲学家、启蒙思想家）<br/>兴趣是最好的老师，热爱是最澎湃的动力。学海无涯，热爱为帆，永远Crazy For Code！</p>
+							<p>
+								<b>这里有最给力的硬件资源：</b><br /><br />Wi-Fi
+								全覆盖，畅享高速网络；宽敞专属座位，只为舒适 Coding；
+								各类技术书籍应有尽有，还有海内外各式云服务器任你折腾！
+							</p>
 						</div>
 						<div class="text intro-text" v-if="seen3">
-							<p>氛围志气这东西是能传染的，你能感染着笼罩在你的环境中的精神。那些在你周围不断向上奋发的人的胜利，会鼓励激发你作更艰苦的奋斗，以求达到如像他们所做的样子。—— 斯蒂文（弗兰德数学家、工程师）<br/>在这里的大家，都怀着一颗coding的心，我们互相激励互相学习互相帮助，在不同的道路上追寻着自己的梦想。</p>
+							<p>
+								在这里，你除了可以和志同道合的小伙伴一起<b>探讨各种前沿的计算机技术</b>，还可以跟学长学姐<b>组队征战各类计算机技术相关的比赛</b>，或者选择<b>合作接手商业性项目</b>，挣点外快，磨练技术，为以后进一线互联网公司工作做积攒实战经验。在这里的大家，都怀着一颗coding的心，我们互相激励互相学习互相帮助，在不同的道路上追寻着自己的梦想。
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div id="human-img">
+			<div class="homemid-down">
 				<img
 					src="../assets/MidImg/human1.jpg"
 					alt=""
-					class="humanImg imgBlue"
+					class="human-img img-blue"
 					@click="onImgClicked1"
 				/>
 				<img
 					src="../assets/MidImg/human2.jpg"
 					alt=""
-					class="humanImg imgOrange"
+					class="human-img img-orange"
 					@click="onImgClicked2"
 				/>
 				<img
 					src="../assets/MidImg/human3.jpg"
 					alt=""
-					class="humanImg imgGreen"
+					class="human-img img-green"
 					@click="onImgClicked3"
 				/>
 			</div>
@@ -53,18 +64,14 @@ export default {
 			seen1: true,
 			seen2: false,
 			seen3: false,
-			intro1:
-				'',
-			intro2:
-				'',
-			intro3:
-				''
+			intro1: '',
+			intro2: '',
+			intro3: ''
 		}
 	},
-	components: {
-	},
+	components: {},
 	mounted() {
-		let bg = document.querySelector('.barrier')
+		let bg = document.querySelector('.homemid-barrier')
 		const rect = bg.getBoundingClientRect()
 		bg.addEventListener(
 			'mousemove',
@@ -81,7 +88,7 @@ export default {
 			this.seen1 = true
 			this.seen2 = false
 			this.seen3 = false
-			let box = document.querySelector('.imgBlue')
+			let box = document.querySelector('.img-blue')
 			box.classList.add('imgClicked')
 			setTimeout(() => {
 				box.classList.remove('imgClicked')
@@ -91,7 +98,7 @@ export default {
 			this.seen1 = false
 			this.seen2 = true
 			this.seen3 = false
-			let box = document.querySelector('.imgOrange')
+			let box = document.querySelector('.img-orange')
 			box.classList.add('imgClicked')
 			setTimeout(() => {
 				box.classList.remove('imgClicked')
@@ -101,7 +108,7 @@ export default {
 			this.seen1 = false
 			this.seen2 = false
 			this.seen3 = true
-			let box = document.querySelector('.imgGreen')
+			let box = document.querySelector('.img-green')
 			box.classList.add('imgClicked')
 			setTimeout(() => {
 				box.classList.remove('imgClicked')
@@ -113,31 +120,28 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.homemid {
+#homemid {
 	height: 100vh;
 	width: 100%;
 	background-color: rgb(255, 255, 255);
-	// background: linear-gradient(0.9turn, rgb(21,23,39) 50%, white 50%);
-	// background-color: #282828;
 }
-.barrier {
+.homemid-barrier {
 	height: 100%;
 	width: 100%;
 	background-image: url('../assets/MidImg/04.png');
 	background-size: 120%;
 	background-attachment: fixed;
-	// overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
-.human-top {
+.homemid-up {
 	height: 40%;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 }
-.human-contents {
+.homemid-up-contents {
 	background-color: rgba(255, 255, 255, 0.5);
 	position: relative;
 	height: 100%;
@@ -151,8 +155,6 @@ export default {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	// animation: heartBeat 15s ;
-	// animation-iteration-count: infinite;
 }
 
 .innertext {
@@ -161,21 +163,21 @@ export default {
 	display: flex;
 }
 .intro-text {
+	line-height: 1.5em;
 	font-size: 0.4rem;
 	height: fit-content;
 }
 
-#human-img {
+.homemid-down {
 	height: fit-content;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
-.humanImg {
-	width: 12%;
-	height: auto;
-	min-width: 90px;
+.human-img {
+	width: 16em;
+	height: 16em;
 	margin: 0 5% 0 5%;
 	border-radius: 50%;
 }
@@ -184,16 +186,24 @@ export default {
 	animation-iteration-count: 2;
 	box-shadow: rgba(0, 0, 0, 0.6) 3px -3px 6px 6px;
 }
-.imgBlue:hover {
+.img-blue:hover {
 	animation: swing 2s;
 	box-shadow: rgba(0, 0, 255, 0.6) 3px 3px 3px 3px;
 }
-.imgOrange:hover {
+.img-orange:hover {
 	animation: swing 2s;
 	box-shadow: rgba(255, 68, 0, 0.6) 3px 3px 3px 3px;
 }
-.imgGreen:hover {
+.img-green:hover {
 	animation: swing 2s;
 	box-shadow: rgba(20, 150, 79, 0.6) 3px 3px 3px 3px;
+}
+
+// 适配
+@media screen and (max-width: 769px) {
+	.human-img {
+		height: 100px;
+		width: 100px;
+	}
 }
 </style>

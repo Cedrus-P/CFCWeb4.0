@@ -1,9 +1,6 @@
 <template>
 	<div id="down">
-		<!--Content before waves-->
 		<div class="inner-header flex"></div>
-
-		<!--Waves Container-->
 		<div>
 			<svg
 				class="waves"
@@ -37,24 +34,24 @@
 				</g>
 			</svg>
 		</div>
-    <div class="content">
-      <img src="../assets/FootImg/CFC.png" alt="" class="foot-img">
-      <div id="icons">
-					<div @click="onQQClick">
-						<img src="../assets/FootImg/qq.png" alt="" class="iconImg" />
-					</div>
-					<a href="https://github.com/CrazyForCode"
-						><img src="../assets/FootImg/github.png" alt="" class="iconImg" />
-					</a>
-					<a
-						href="https://mp.weixin.qq.com/s?__biz=Mzg3NzUxNjE5OQ==&mid=2247483698&idx=1&sn=9e63c934c697a21665b4c8f7e736b663&chksm=cf2085faf8570cec13b773d84bcd80c8e6d1574fe7c5b343982ad0bd9381806b896a017dd634&mpshare=1&scene=23&srcid=1124z7zoWyC7pMy1QLQK5pzr&sharer_sharetime=1637759221463&sharer_shareid=502450450a38379b9390fed83b301578%23rd"
-						><img src="../assets/FootImg/wechat.png" alt="" class="iconImg" />
-					</a>
-					<!-- <a href="#"><img src="../assets/FootImg/email.png" alt="" class="iconImg" /> </a> -->
+		<div class="content">
+			<img src="../assets/FootImg/CFC.png" alt="" class="foot-img" />
+			<div id="icons">
+				<div @click="onQQClick">
+					<img src="../assets/FootImg/qq.png" alt="" class="icon-img" />
 				</div>
-				<p id="footText" class="text">©2013-2021 Copy Right CFC</p>
+				<a href="https://github.com/CrazyForCode"
+					><img src="../assets/FootImg/github.png" alt="" class="icon-img" />
+				</a>
+				<a
+					href="https://mp.weixin.qq.com/s?__biz=Mzg3NzUxNjE5OQ==&mid=2247483698&idx=1&sn=9e63c934c697a21665b4c8f7e736b663&chksm=cf2085faf8570cec13b773d84bcd80c8e6d1574fe7c5b343982ad0bd9381806b896a017dd634&mpshare=1&scene=23&srcid=1124z7zoWyC7pMy1QLQK5pzr&sharer_sharetime=1637759221463&sharer_shareid=502450450a38379b9390fed83b301578%23rd"
+					><img src="../assets/FootImg/wechat.png" alt="" class="icon-img" />
+				</a>
+				<!-- <a href="#"><img src="../assets/FootImg/email.png" alt="" class="icon-img" /> </a> -->
 			</div>
-    </div>
+			<p id="foot-text" class="text">©2013-2021 Copy Right CFC</p>
+		</div>
+	</div>
 </template>
 
 <script>
@@ -85,7 +82,6 @@ export default {
 }
 
 .flex {
-	/*Flexbox for containers*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -96,7 +92,7 @@ export default {
 	position: relative;
 	width: 100%;
 	height: 15vh;
-	margin-bottom: -7px; /*Fix for safari gap*/
+	margin-bottom: -7px;
 	min-height: 100px;
 	max-height: 200px;
 }
@@ -104,12 +100,12 @@ export default {
 .content {
 	position: relative;
 	height: 25vh;
-  width: auto;
+	width: auto;
 	text-align: center;
 	background-color: #4acac3;
-  display: flex;
-      flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /* Animation */
@@ -154,12 +150,12 @@ export default {
 		font-size: 24px;
 	}
 }
-.foot-img{
-  height: 60%;
-  width: auto;
-  padding-bottom: 5px;
+.foot-img {
+	height: 60%;
+	width: auto;
+	padding-bottom: 5px;
 	padding-right: 5px;
-  border-bottom: white 3px solid;
+	border-bottom: white 3px solid;
 }
 #icons {
 	width: 205px;
@@ -170,7 +166,7 @@ export default {
 	justify-content: space-around;
 	align-content: center;
 }
-.iconImg {
+.icon-img {
 	width: 25px;
 	height: 25px;
 }
