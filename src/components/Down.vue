@@ -44,7 +44,7 @@
 					><img src="../assets/FootImg/github.png" alt="" class="icon-img" />
 				</a>
 				<a
-					href="https://mp.weixin.qq.com/s?__biz=Mzg3NzUxNjE5OQ==&mid=2247483698&idx=1&sn=9e63c934c697a21665b4c8f7e736b663&chksm=cf2085faf8570cec13b773d84bcd80c8e6d1574fe7c5b343982ad0bd9381806b896a017dd634&mpshare=1&scene=23&srcid=1124z7zoWyC7pMy1QLQK5pzr&sharer_sharetime=1637759221463&sharer_shareid=502450450a38379b9390fed83b301578%23rd"
+					href="https://mp.weixin.qq.com/s?__biz=Mzg3NzUxNjE5OQ==&mid=2247483899&idx=1&sn=262a20e2b37d8bb7072f7a92d8cecfff&chksm=cf208533f8570c25a740362db72576760f2b64c0b21009b6e777f557adb4193d05fe8d597542&scene=132#wechat_redirect"
 					><img src="../assets/FootImg/wechat.png" alt="" class="icon-img" />
 				</a>
 				<!-- <a href="#"><img src="../assets/FootImg/email.png" alt="" class="icon-img" /> </a> -->
