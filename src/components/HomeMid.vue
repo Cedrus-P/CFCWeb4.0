@@ -128,7 +128,7 @@ export default {
 .homemid-barrier {
 	height: 100%;
 	width: 100%;
-	background-image: url('../assets/MidImg/04.png');
+	background-image: url('https://cfc-img-1305992392.file.myqcloud.com/04.png');
 	background-size: 120%;
 	background-attachment: fixed;
 	display: flex;

@@ -7,7 +7,7 @@
 						<h1 id="cfc-up-text" class="text cfc-text text-changed big-text">
 							CFC Studio
 						</h1>
-						<h2 class="text cfc-text typing">Crazy For Code</h2>
+						<h2 class="text cfc-text">Crazy For Code</h2>
 					</div>
 					<div class="hometop-content-down">
 						<transition name="fade">
@@ -113,7 +113,7 @@ export default {
 	transition: 1s ease-in-out;
 }
 .hometop-bg {
-	background-image: url('../assets/HomeImg/03.png');
+	background-image: url('https://cfc-img-1305992392.file.myqcloud.com/03.png');
 	background-size: 130% auto;
 	background-position: center;
 	background-repeat: repeat;
