@@ -29,19 +29,19 @@
 			</div>
 			<div class="homemid-down">
 				<img
-					src="../assets/MidImg/human1.jpg"
+					src="../assets/MidImg/human1.jpeg"
 					alt=""
 					class="human-img img-blue"
 					@click="onImgClicked1"
 				/>
 				<img
-					src="../assets/MidImg/human2.jpg"
+					src="../assets/MidImg/human2.jpeg"
 					alt=""
 					class="human-img img-orange"
 					@click="onImgClicked2"
 				/>
 				<img
-					src="../assets/MidImg/human3.jpg"
+					src="../assets/MidImg/human3.jpeg"
 					alt=""
 					class="human-img img-green"
 					@click="onImgClicked3"

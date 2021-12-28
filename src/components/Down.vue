@@ -35,7 +35,7 @@
 			</svg>
 		</div>
     <div class="content">
-      <img src="../assets/FootImg/CFC.png" alt="" class="foot-img">
+      <img src="https://cfc-img-1305992392.file.myqcloud.com/CFC.png" alt="" class="foot-img">
       <div id="icons">
 					<div @click="onQQClick">
 						<img src="https://cfc-img-1305992392.file.myqcloud.com/qq.png" alt="" class="icon-img" />

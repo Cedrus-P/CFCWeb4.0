@@ -22,7 +22,7 @@
 									CFC团队成立于2013年1月，是重庆理工大学第一支完全由学生自主创立的计算机实验室。团队最初由三位热爱Web技术，渴望交流的学长组建，经过多年的发展，团队不断壮大，成员们的学习方向也不再局限于Web。<br />CFC已经成为重理工最大的的极客聚居地之一，并创造了多个校史第一。CFC一直秉承CrazyForCode的理念，为校内热爱技术、乐于学习的学子提供一个舒适的Coding环境和优秀的交流平台。
 								</p>
 								<div class="arrow-down " @click="onArrowClick">
-									<img src="../assets/FootImg/next.png" alt="" id="nextImg" />
+									<img src="https://cfc-img-1305992392.file.myqcloud.com/next.png" alt="" id="nextImg" />
 								</div>
 							</div>
 						</transition>
